@@ -63,7 +63,35 @@ li.selected{
     padding-bottom:6px;
     border-bottom:solid 4px #000;
 }
-ul.speakers_product_home_list{
+
+/* 추가 */
+ul.speakers_product_list{
+    margin-top:40px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    gap:1em;
+}
+ul.speakers_product_list li{
+    text-align:center;
+    font-size:18px;
+    position:relative;
+    width:32%;
+    height:500px;
+    background:#C5C5C5;
+    border-radius:10px;
+}
+ul.speakers_product_list li img{
+    position:absolute;
+    width:70%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -80%);
+}
+/* 추가 끝 */
+
+
+/* ul.speakers_product_home_list{
     margin-top:40px;
     display:flex;
     flex-wrap:wrap;
@@ -94,7 +122,7 @@ ul.speakers_product_portable_list li{
     height:500px;
     background:#C5C5C5;
     border-radius:10px;
-}
+} */
 div.product_text_box span{
     font-weight:500;
     white-space: pre-wrap;
@@ -103,7 +131,7 @@ div.product_text_box p{
     font-size:15px;
     margin-top:15px;
 }
-ul.speakers_product_home_list li img{
+/* ul.speakers_product_home_list li img{
     position:absolute;
     width:70%;
     top:50%;
@@ -116,7 +144,7 @@ ul.speakers_product_portable_list li img{
     top:50%;
     left:50%;
     transform:translate(-50%, -80%);
-}
+} */
 ul.product_color{
     width:20%;
     position:absolute;
@@ -139,24 +167,20 @@ ul.product_color button{
 }
 .blackButton {
     background: black;
-  }
-  
-  .whiteButton {
+}
+.whiteButton {
     background: white;
-  }
-  .creamButton{
+}
+.creamButton{
     background:#E8E0D5;
-  }
-  
-  .brownButton {
+}
+.brownButton {
     background: #824820;
-  }
-  
-  .portableButton {
+}
+.portableButton {
     background: linear-gradient(90deg, #000000, #000000 50%, #b9935e 50%);
-  }
-  
-  .greenButton {
+}
+.greenButton {
     background: #445544;
 }
     /* You can add more specific styles here */
@@ -268,7 +292,7 @@ div.limited_edition_text p{
     font-size:30px;
     padding-top: 20px;
 }
-@media (max-width:1919px) {
+/* @media (max-width:1919px) {
 
 }
 @media (max-width:1630px) {
@@ -301,4 +325,30 @@ div.limited_edition_text p{
     ul.speakers_product_portable_list li{
         width:48%;
     }
+} */
+
+/* 미디어 스크린 추가 */
+@media (max-width:1630px) {
+    html{
+        font-size:80%;
+    }
+    ul.speakers_product_list li{
+        width:49%;
+    }
 }
+
+@media (max-width:1280px){
+    html{
+        font-size:66%;
+    }
+    section.speakers_product{
+        width:80%;
+    }
+}
+
+@media (max-width:860px){
+    ul.speakers_product_list li{
+        width:48%;
+    }
+}
+/* 미디어 스크린 추가 끝 */
