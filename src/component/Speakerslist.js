@@ -5,14 +5,13 @@ import useProducts from '../hooks/useProducts'
 
 export default function Speakerslist() {
   const [allProducts]= useProducts();
-
   const categories=[
     {index:0, text:'ALL'},
     {index:1, text:'HOME'},
     {index:2, text:'PORTABLE'},
     {index:3, text:'LIMITED EDITION'},
   ]
-  const [selectCategory,setSelectCategory]=useState(categories[0].text)//선택한 카테고리 이름을 저장.
+  const [selectCategory,setSelectCategory]=useState('ALL')//선택한 카테고리 이름을 저장.
   const [categoryItems,setCategoryItems] =useState([]);
   
   useEffect(()=>{
@@ -22,7 +21,7 @@ export default function Speakerslist() {
       const categoryItems=allProducts.filter((item)=>(item.category===selectCategory))
       setCategoryItems(categoryItems)
     }
-  },[selectCategory,allProducts])
+  },[selectCategory, allProducts])
   
   const navigate=useNavigate()
   // 아래 변수에 일관성 보완: isAllCategory, isHomeCategory 추가 삽입
@@ -30,6 +29,11 @@ export default function Speakerslist() {
   const isHomeCategory = selectCategory === 'HOME';
   const isPortableCategory = selectCategory === 'PORTABLE';
   const isLimitedCategory = selectCategory === 'LIMITED EDITION';
+
+  if (!allProducts) {
+    return <div>Loading...</div>;
+  }
+
 
   return (
     <>
@@ -77,6 +81,7 @@ export default function Speakerslist() {
                         : color === 'white' ? styles.whiteButton 
                         : color === 'brown' ? styles.brownButton 
                         : color === 'cream' ? styles.creamButton 
+                        : color === 'black and brass' ? styles.portableButton
                         : styles.defaultButton
                       }>
                         {color}

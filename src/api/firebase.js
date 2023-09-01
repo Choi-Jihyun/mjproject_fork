@@ -15,14 +15,21 @@ const firebaseConfig = {
   
   /********** 개인 인증키 입력 **********/
 
-  apiKey: "AIzaSyAVcGsFT_vzU-EG5gjmkR8Bx3hk6Xjhprk",
-  authDomain: "mjproject-c4782.firebaseapp.com",
-  databaseURL: "https://mjproject-c4782-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "mjproject-c4782",
-  storageBucket: "mjproject-c4782.appspot.com",
-  messagingSenderId: "471825859563",
-  appId: "1:471825859563:web:ac320ce8ceb0ee41bdcfae"
-
+  // apiKey: "AIzaSyAVcGsFT_vzU-EG5gjmkR8Bx3hk6Xjhprk",
+  // authDomain: "mjproject-c4782.firebaseapp.com",
+  // databaseURL: "https://mjproject-c4782-default-rtdb.asia-southeast1.firebasedatabase.app",
+  // projectId: "mjproject-c4782",
+  // storageBucket: "mjproject-c4782.appspot.com",
+  // messagingSenderId: "471825859563",
+  // appId: "1:471825859563:web:ac320ce8ceb0ee41bdcfae"
+  apiKey: "AIzaSyBrfu945E0ekwZnfhVN19hwrhIdbJynb2w",
+  authDomain: "test-44be2.firebaseapp.com",
+  databaseURL: "https://test-44be2-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "test-44be2",
+  storageBucket: "test-44be2.appspot.com",
+  messagingSenderId: "900389624048",
+  appId: "1:900389624048:web:e529525ea43e94face4a35",
+  measurementId: "G-MJ0NJRMQZE"
 
 };
 console.log('firebaseConfig ', firebaseConfig)

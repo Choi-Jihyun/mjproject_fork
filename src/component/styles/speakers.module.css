@@ -180,6 +180,9 @@ ul.product_color button{
 .portableButton {
     background: linear-gradient(90deg, #000000, #000000 50%, #b9935e 50%);
 }
+.defaultButton {
+    background: linear-gradient(90deg, #000000, #000000 50%, #b9935e 50%);
+}
 .greenButton {
     background: #445544;
 }
