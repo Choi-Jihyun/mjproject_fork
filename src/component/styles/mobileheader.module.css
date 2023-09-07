@@ -20,6 +20,14 @@ ul#menu_list{
     display:flex;
     justify-content:space-between;
 }
+div#menu_list{
+    padding:15px 16px;
+    display:flex;
+    justify-content:space-between;
+    cursor: pointer;
+}
+
+
 nav#mobilemenu{
     width:80vw; 
     height:100vh; 

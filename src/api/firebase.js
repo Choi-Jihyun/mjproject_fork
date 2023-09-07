@@ -6,6 +6,7 @@ import {
   GoogleAuthProvider,
   signOut,
   onAuthStateChanged,
+  signInWithRedirect,
 } from 'firebase/auth';
 import { getDatabase, ref, set, get, remove, query, orderByKey, equalTo } from 'firebase/database';
 
@@ -41,7 +42,8 @@ const database = getDatabase(app);
 
 
 export function login() { // 로그인창 실행함수 
-  signInWithPopup(auth, provider).catch(console.error);
+  // signInWithPopup(auth, provider).catch(console.error);
+  signInWithRedirect(auth, provider).catch(console.error);
 }
 
 export function logout() { // 로그아웃 실행함수 
